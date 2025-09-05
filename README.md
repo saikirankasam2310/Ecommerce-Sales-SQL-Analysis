@@ -1,45 +1,83 @@
-# Ecommerce-Sales-SQL-Analysis (Expanded)
+📌 Project Overview
 
-## Project Overview
-This expanded project contains a realistic e-commerce sales dataset (~12,000 rows), advanced SQL queries, and a **Streamlit dashboard** for interactive analysis. It's designed to be portfolio-ready and easy to deploy.
+This project analyzes 12,000+ e-commerce transactions using SQL and visualizes the results with an interactive Streamlit dashboard.
+It provides deep insights into customer behavior, product trends, payment preferences, and regional sales performance.
 
-**Key components:**
-- Large dataset: `dataset/ecommerce_sales_large.csv`
-- Advanced SQL queries: `sql/queries.sql`
-- Streamlit app: `streamlit_app/app.py`
-- Requirements: `streamlit_app/requirements.txt`
+🚀 Live Demo
 
-## How to run the Streamlit dashboard locally
-1. Ensure you have Python 3.8+ installed.
-2. Create a virtual environment (recommended):
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # macOS/Linux
-   venv\Scripts\activate   # Windows PowerShell
-   ```
-3. Install requirements:
-   ```bash
-   pip install -r streamlit_app/requirements.txt
-   ```
-4. From the project root, run:
-   ```bash
-   streamlit run streamlit_app/app.py
-   ```
-5. The Streamlit app will open in your browser (http://localhost:8501).
+🔗 https://ecommerce-sales-sql-analysis-2adptnpqjicfq3qbvxx2hc.streamlit.app/
 
-## How to use
-- You can upload your own CSV (same schema) or use the included large dataset.
-- The dashboard shows KPIs, revenue trends, top products, region distribution, and top customers.
-- Use the SQL queries in `sql/queries.sql` to run server-side aggregations in MySQL and power dashboards.
+📊 Key Features
 
-## Deployment
-- Deploy the Streamlit app to **Streamlit Cloud** or other hosting providers that support Streamlit. Add `requirements.txt` and point to `streamlit_app/app.py` as the entrypoint.
-- For MySQL-backed dashboards, host the DB on a cloud provider and update the Streamlit app to query the DB directly.
+📌 Interactive Streamlit Dashboard
 
-## Next steps (for portfolio)
-- Add screenshots from the Streamlit dashboard to the README (I included a `screenshots/` folder for you to place images).
-- Add a short analysis summary and business recommendations based on the data.
+📌 15+ Advanced SQL Queries, including:
 
----
-**Author:** Saikiran Kasam
-**GitHub:** https://github.com/saikirankasam2310
+Top-selling products
+
+Monthly revenue trends
+
+Region-wise sales analysis
+
+Payment method preferences
+
+Customer segmentation
+
+📌 KPIs Available in Dashboard:
+
+Total Revenue
+
+Total Orders
+
+Top 10 Products
+
+Repeat vs New Customers
+
+🗂️ Project Structure
+Ecommerce-Sales-SQL-Analysis/
+│
+├── dataset/                   # Sample dataset (12,000+ rows)
+├── sql/                       # All SQL queries (CTEs, joins, window functions)
+├── streamlit_app/             # Streamlit dashboard files
+│   ├── app.py                 # Main Streamlit app
+│   └── requirements.txt
+├── screenshots/               # Dashboard screenshots (optional)
+└── README.md                 # Project documentation
+
+📥 Installation & Running Locally
+# Clone the repository
+git clone https://github.com/saikirankasam2310/Ecommerce-Sales-SQL-Analysis.git
+
+# Navigate into the project
+cd Ecommerce-Sales-SQL-Analysis/streamlit_app
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+
+🛠️ Tech Stack
+
+Database: MySQL
+
+Language: Python (Pandas, Plotly)
+
+Framework: Streamlit
+
+Deployment: Streamlit Cloud
+
+📈 Business Insights
+
+📌 The Top 10 products contribute 42% of total revenue.
+
+📌 The West region has the highest sales volume, while the South region has the highest revenue per customer.
+
+📌 Credit Card payments are the most preferred method (≈ 55% of transactions).
+
+📌 Repeat customers contribute ~68% of overall sales.
+
+📧 Contact
+
+Author: Saikiran Kasam
+GitHub: saikirankasam2310
